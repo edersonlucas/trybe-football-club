@@ -13,7 +13,7 @@ export const findAllMock = [
   }
 ]
 
-export const findOneMock = {
+export const findByPkMock = {
   "id": 5,
   "teamName": "Cruzeiro"
 }
