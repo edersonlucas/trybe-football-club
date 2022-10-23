@@ -1,6 +1,11 @@
 import { NextFunction, Request, Response } from 'express';
 import IUser from '../interfaces/IUser';
 import LoginService from '../services/LoginService';
+
+interface RequestValidation extends Request {
+  user?: IUser,
+}
+
 export default class LoginController {
   private service: LoginService;
   constructor() {
@@ -17,4 +22,7 @@ export default class LoginController {
     }
   }
 
+  public static async validation(req: RequestValidation, res: Response) {
+    return res.status(200).json({ role: req.user?.role });
+  }
 }
