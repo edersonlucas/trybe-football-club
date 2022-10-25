@@ -5,6 +5,7 @@ import chaiHttp = require('chai-http');
 
 import { app } from '../app';
 import User from '../database/models/User';
+import * as jwt from 'jsonwebtoken';
 
 import { Response } from 'superagent';
 
@@ -90,7 +91,22 @@ describe('POST /login', () => {
 describe('GET /login/validate', () => {
   
   describe('Quando o token e passado corretamente', () => {
-
+    beforeEach(() => {
+      sinon
+        .stub(jwt, 'verify')
+        .callsFake(() => {
+          return {
+            "id": 1,
+            "username": "Admin",
+            "role": "admin",
+            "email": "admin@admin.com",
+            "iat": 1666485018
+          }
+        })
+    })
+    afterEach(() => {
+      (jwt.verify as sinon.SinonStub).restore()
+    })
     it('deve retornar um 200', async () => {
       const httpResponse: Response = await chai.request(app).get('/login/validate').set(correctToken)
       expect(httpResponse.status).to.equal(200);
@@ -111,7 +127,7 @@ describe('GET /login/validate', () => {
 
     it('deve retornar um 400', async () => {
       const httpResponse: Response = await chai.request(app).get('/login/validate').set(incorrectToken)
-      expect(httpResponse.status).to.equal(400);
+      expect(httpResponse.status).to.equal(401);
       expect(httpResponse.body).to.deep.equal(invalidTokenResponse)
     })
   })
