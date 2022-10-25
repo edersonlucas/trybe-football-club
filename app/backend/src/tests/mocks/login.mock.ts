@@ -39,4 +39,4 @@ export const incorrectToken = { authorization: 'eysds' }
 
 export const notFoundTokenResponse = { message: "Token not found" }
 
-export const invalidTokenResponse = { message: "Invalid token" }
+export const invalidTokenResponse = { message: "Token must be a valid token" }
