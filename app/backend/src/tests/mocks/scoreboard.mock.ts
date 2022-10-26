@@ -94,19 +94,7 @@ export const getAllResponse = [
     goalsFavor: 26,
     goalsOwn: 14,
     goalsBalance: 12,
-    efficiency: "46.67"
-  },
-  {
-    name: 'Avaí/Kindermann',
-    totalPoints: 4,
-    totalGames: 5,
-    totalVictories: 4,
-    totalDraws: 0,
-    totalLosses: 2,
-    goalsFavor: 14,
-    goalsOwn: 26,
-    goalsBalance: -12,
-    efficiency: "26.67"
+    efficiency: '46.67'
   },
   {
     name: 'Bahia',
@@ -118,23 +106,23 @@ export const getAllResponse = [
     goalsFavor: 19,
     goalsOwn: 21,
     goalsBalance: -2,
-    efficiency: "26.67"
+    efficiency: '26.67'
+  },
+  {
+    name: 'Avaí/Kindermann',
+    totalPoints: 4,
+    totalGames: 5,
+    totalVictories: 4,
+    totalDraws: 0,
+    totalLosses: 2,
+    goalsFavor: 14,
+    goalsOwn: 26,
+    goalsBalance: -12,
+    efficiency: '26.67'
   }
 ]
 
 export const getAllHomeResponse = [
-  {
-    name: 'Avaí/Kindermann',
-    totalPoints: 3,
-    totalGames: 3,
-    totalVictories: 3,
-    totalDraws: 0,
-    totalLosses: 2,
-    goalsFavor: 6,
-    goalsOwn: 11,
-    goalsBalance: -5,
-    efficiency: "33.33"
-  },
   {
     name: 'Bahia',
     totalPoints: 3,
@@ -145,7 +133,7 @@ export const getAllHomeResponse = [
     goalsFavor: 11,
     goalsOwn: 6,
     goalsBalance: 5,
-    efficiency: "33.33"
+    efficiency: '33.33'
   },
   {
     name: 'Botafogo',
@@ -157,7 +145,19 @@ export const getAllHomeResponse = [
     goalsFavor: 11,
     goalsOwn: 6,
     goalsBalance: 5,
-    efficiency: "33.33"
+    efficiency: '33.33'
+  },
+  {
+    name: 'Avaí/Kindermann',
+    totalPoints: 3,
+    totalGames: 3,
+    totalVictories: 3,
+    totalDraws: 0,
+    totalLosses: 2,
+    goalsFavor: 6,
+    goalsOwn: 11,
+    goalsBalance: -5,
+    efficiency: '33.33'
   }
 ]
 
@@ -182,18 +182,6 @@ export const findAllMatchAwayMock = [
 
 export const getAllAwayResponse = [
   {
-    name: 'Avaí/Kindermann',
-    totalPoints: 3,
-    totalGames: 2,
-    totalVictories: 2,
-    totalDraws: 0,
-    totalLosses: 1,
-    goalsFavor: 4,
-    goalsOwn: 6,
-    goalsBalance: -2,
-    efficiency: "50.00"
-  },
-  {
     name: 'Botafogo',
     totalPoints: 3,
     totalGames: 2,
@@ -203,7 +191,19 @@ export const getAllAwayResponse = [
     goalsFavor: 6,
     goalsOwn: 4,
     goalsBalance: 2,
-    efficiency: "50.00"
+    efficiency: '50.00'
+  },
+  {
+    name: 'Avaí/Kindermann',
+    totalPoints: 3,
+    totalGames: 2,
+    totalVictories: 2,
+    totalDraws: 0,
+    totalLosses: 1,
+    goalsFavor: 4,
+    goalsOwn: 6,
+    goalsBalance: -2,
+    efficiency: '50.00'
   },
   {
     name: 'Bahia',
@@ -215,7 +215,7 @@ export const getAllAwayResponse = [
     goalsFavor: 6,
     goalsOwn: 4,
     goalsBalance: 2,
-    efficiency: "0.00"
+    efficiency: '0.00'
   }
 ]
 
