@@ -4,6 +4,7 @@ import Match from '../database/models/Match';
 import Team from '../database/models/Team';
 import scoreboardGenerator from '../helpers/scoreboardHelper';
 import arrayLimiter from '../helpers/arrayLimiter';
+import sortScores from '../helpers/sortScores';
 
 export default class ScoreboardService {
   private model = Match;
@@ -26,7 +27,7 @@ export default class ScoreboardService {
       }),
     );
 
-    const sortedScores = scores.sort((a, b) => b.totalPoints - a.totalPoints);
+    const sortedScores = sortScores(scores);
     return arrayLimiter(sortedScores, 10);
   }
 
@@ -47,7 +48,7 @@ export default class ScoreboardService {
       }),
     );
 
-    const sortedScores = scores.sort((a, b) => b.totalPoints - a.totalPoints);
+    const sortedScores = sortScores(scores);
     return arrayLimiter(sortedScores, 10);
   }
 
@@ -67,7 +68,7 @@ export default class ScoreboardService {
         };
       }),
     );
-    const sortedScores = scores.sort((a, b) => b.totalPoints - a.totalPoints);
+    const sortedScores = sortScores(scores);
     return arrayLimiter(sortedScores, 10);
   }
 }
