@@ -94,7 +94,7 @@ export const getAllResponse = [
     goalsFavor: 26,
     goalsOwn: 14,
     goalsBalance: 12,
-    efficiency: 46.67
+    efficiency: "46.67"
   },
   {
     name: 'Avaí/Kindermann',
@@ -106,7 +106,7 @@ export const getAllResponse = [
     goalsFavor: 14,
     goalsOwn: 26,
     goalsBalance: -12,
-    efficiency: 26.67
+    efficiency: "26.67"
   },
   {
     name: 'Bahia',
@@ -118,7 +118,7 @@ export const getAllResponse = [
     goalsFavor: 19,
     goalsOwn: 21,
     goalsBalance: -2,
-    efficiency: 26.67
+    efficiency: "26.67"
   }
 ]
 
@@ -133,7 +133,7 @@ export const getAllHomeResponse = [
     goalsFavor: 6,
     goalsOwn: 11,
     goalsBalance: -5,
-    efficiency: 33.33
+    efficiency: "33.33"
   },
   {
     name: 'Bahia',
@@ -145,7 +145,7 @@ export const getAllHomeResponse = [
     goalsFavor: 11,
     goalsOwn: 6,
     goalsBalance: 5,
-    efficiency: 33.33
+    efficiency: "33.33"
   },
   {
     name: 'Botafogo',
@@ -157,7 +157,7 @@ export const getAllHomeResponse = [
     goalsFavor: 11,
     goalsOwn: 6,
     goalsBalance: 5,
-    efficiency: 33.33
+    efficiency: "33.33"
   }
 ]
 
@@ -191,7 +191,7 @@ export const getAllAwayResponse = [
     goalsFavor: 4,
     goalsOwn: 6,
     goalsBalance: -2,
-    efficiency: 50
+    efficiency: "50.00"
   },
   {
     name: 'Botafogo',
@@ -203,7 +203,7 @@ export const getAllAwayResponse = [
     goalsFavor: 6,
     goalsOwn: 4,
     goalsBalance: 2,
-    efficiency: 50
+    efficiency: "50.00"
   },
   {
     name: 'Bahia',
@@ -215,7 +215,7 @@ export const getAllAwayResponse = [
     goalsFavor: 6,
     goalsOwn: 4,
     goalsBalance: 2,
-    efficiency: 0
+    efficiency: "0.00"
   }
 ]
 

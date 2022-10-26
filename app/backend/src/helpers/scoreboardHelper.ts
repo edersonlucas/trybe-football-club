@@ -75,7 +75,7 @@ export default (matches: Match[], id: number) => {
   const totalDraws = calculateDraws(matches, id);
   const totalLosses = calculateLosses(matches, id);
   const { goalsFavor, goalsOwn, goalsBalance } = calculateGoals(matches, id);
-  const efficiency = Number(((totalPoints / (totalGames * 3)) * 100).toFixed(2));
+  const efficiency = ((totalPoints / (totalGames * 3)) * 100).toFixed(2);
   return {
     totalPoints,
     totalGames,
