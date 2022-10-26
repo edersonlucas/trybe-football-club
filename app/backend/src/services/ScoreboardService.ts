@@ -3,7 +3,6 @@ import IScoreboard from '../interfaces/IScoreboard';
 import Match from '../database/models/Match';
 import Team from '../database/models/Team';
 import scoreboardGenerator from '../helpers/scoreboardHelper';
-import arrayLimiter from '../helpers/arrayLimiter';
 import sortScores from '../helpers/sortScores';
 
 export default class ScoreboardService {
@@ -27,8 +26,7 @@ export default class ScoreboardService {
       }),
     );
 
-    const sortedScores = sortScores(scores);
-    return arrayLimiter(sortedScores, 10);
+    return sortScores(scores);
   }
 
   public async getAllHome() {
@@ -48,8 +46,7 @@ export default class ScoreboardService {
       }),
     );
 
-    const sortedScores = sortScores(scores);
-    return arrayLimiter(sortedScores, 10);
+    return sortScores(scores);
   }
 
   public async getAllAway() {
@@ -68,7 +65,6 @@ export default class ScoreboardService {
         };
       }),
     );
-    const sortedScores = sortScores(scores);
-    return arrayLimiter(sortedScores, 10);
+    return sortScores(scores);
   }
 }
