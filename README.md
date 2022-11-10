@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Sistema de gerenciamento de partidas de futebol onde os usuários terão acesso às informações mais importantes das partidas que estão sendo jogadas e a classificação dos times.
+Sistema de gerenciamento de partidas de futebol, onde os usuários terão acesso às informações mais importantes das partidas, que estão sendo jogadas e a classificação dos times.
 
 Este projeto foi desenvolvido seguindo o paradigma de **POO**(Programação orientada a objetos) e os princípios do **SOLID** com **TDD**(Desenvolvimento Orientado a Testes).
 
