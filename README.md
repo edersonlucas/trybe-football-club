@@ -47,10 +47,9 @@ Pretendo no futuro implementar o Swagger-UI para documentar as rotas.
 
     # Clonar este repositório
         $ git clone https://github.com/edersonlucas/trybe-football-club
-    
     # Entre no repositório
         $ cd trybe-football-club
-    # Instalando as Dependencias
+    # Instalando as dependencias
         $ npm install
     # Executando o projeto
         $ npm run compose:up
